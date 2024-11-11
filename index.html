@@ -94,8 +94,10 @@
 
       document.body.appendChild(script);
 
-      const tgid = document.getElementById("tginfo");
-      tgid.innerHTML = `tginfo: ${window.Telegram.WebApp.initData} |UNSAFE:| ${window.Telegram.WebApp.initDataUnsafe}`;
+      setTimeout(() => {
+        const tgid = document.getElementById("tginfo");
+        tgid.innerHTML = `tginfo: ${window.Telegram.WebApp.initData} |UNSAFE:| ${window.Telegram.WebApp.initDataUnsafe}`;
+      }, 100);
     </script>
   </body>
 </html>
